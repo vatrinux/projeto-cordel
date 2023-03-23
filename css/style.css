@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --font0: Verdana, Geneva, Tahoma, sans-serif;
+    --font1: 'Passion One', cursive;
+    --font2: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font0);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font1);
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+header a,
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Aqui podemos usar somente o paramêtro "a" para configurar os links de todo o site, já que só existe links no "header" e "footer" */
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--font2);
+    font-size: 3.5vw;
+}
+
+section>p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: darkgray;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+}
+
+section.imagem>p {
+    background-color: rgba(0, 0, 0, 0.35);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+section#img1 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img2 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
